@@ -13,13 +13,13 @@ def main():
     parser=argparse.ArgumentParser()
 	
     parser.add_argument('--file','-f',default=default_file,
-                        help='select the FILE containing your options')
+                        help='Select the FILE containing your options, this is a one-time modification of your choices file.')
     parser.add_argument('--default','-d',default=None,
-                        help='Change the default choices file')
+                        help='Change the default choices file.')
     parser.add_argument('--check','-c',action='store_true',
-                        help='check the default choices file')
+                        help='Check the default choices file.')
     parser.add_argument('--reset','-r',action='store_true',
-                        help='resets the default file (IRREVERSIBLE!')
+                        help='Reset the default file (IRREVERSIBLE!).')
     args=parser.parse_args()
 
     if args.default!=None:
