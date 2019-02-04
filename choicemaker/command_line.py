@@ -20,7 +20,8 @@ def main():
                         help='Check the default choices file.')
     parser.add_argument('--reset','-r',action='store_true',
                         help='Reset the default file (IRREVERSIBLE!).')
-    parser.add_argument('--list','-l',help='List choices.')
+    parser.add_argument('--list','-l',action='store_true',
+                        help='List choices.')
     args=parser.parse_args()
 
     if args.default!=None:
@@ -52,6 +53,12 @@ def main():
         print(args.file)
         print('\n')
         return
+
+    if args.list:
+        for line in choices:
+            print(line)
+        return
+
     # 3) select one at random
     selection=random.randint(0,len(choices)-1)
     # 4) print the result
