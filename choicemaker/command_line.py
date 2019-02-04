@@ -20,6 +20,7 @@ def main():
                         help='Check the default choices file.')
     parser.add_argument('--reset','-r',action='store_true',
                         help='Reset the default file (IRREVERSIBLE!).')
+    parser.add_argument('--list','-l',help='List choices.')
     args=parser.parse_args()
 
     if args.default!=None:
