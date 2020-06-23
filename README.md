@@ -10,3 +10,7 @@ A simple random option chooser, just for fun
 + type `sudo pip install choicemaker`
 + make a choices file (you can check the default location of the file by doing `choose --check`)
 + ready to go, try `choose` and stop being indecisive, if you regret the result than run it again.
+
+## Note
+
+You can check other uses through `choose -h`.
