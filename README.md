@@ -15,4 +15,6 @@ A simple random option chooser, just for fun
 
 You can check other uses through `choose -h`.
 
-## Copyright 2019 Vogu66
+## Copyright 
+
+Copyright (C) 2019 Vogu66
